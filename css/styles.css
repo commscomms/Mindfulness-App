@@ -1,0 +1,77 @@
+/* From https://css-tricks.com/box-sizing/ */
+
+html {
+    box-sizing: border-box;
+
+  } 
+
+
+/* Layout */
+
+.container {
+    float: left;
+    margin: auto auto;
+    height: 100%;
+}
+
+h1 {
+  background: #c7c7c7;
+  margin: 0;
+  opacity: .7;
+}
+
+h2 {
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  color: #c4c4c4;
+  font-family: "Rock Salt", sans-serif;
+}
+
+p {
+  font-size: 15px;
+  background-color: #c7c7c7;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #c7c7c7;
+  margin: 0;
+  left: 0;
+  opacity: .7;
+}
+
+button {
+  border-radius: 25px;
+  background-color: #c7c7c7;
+  border: none;
+  color: #383838;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+/* borrowed from https://codepen.io/hylobates-lar/pen/qBbQeON */
+body {
+  background: linear-gradient(90deg, #001020, #503050, #df7b38, #d6b20f);
+  background-size: 400% 400%;
+  animation: gradient 30s linear infinite;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
