@@ -27,5 +27,5 @@ function stop() {
 
 function reset() {
     console.log("reset");
-    seconds = 10;
+    seconds = 30;
 }
